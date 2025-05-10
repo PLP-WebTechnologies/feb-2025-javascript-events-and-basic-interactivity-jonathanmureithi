@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Console UI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🕹️ Console Bootup: Player Interface</h1>
+    <p>Welcome, Player 1. Ready to interact?</p>
+  </header>
+
+  <main>
+    <!-- Button Interaction -->
+    <section>
+      <h2>🎯 Mission Control Panel</h2>
+      <button id="clickMeBtn">🔋 Power Up!</button>
+      <p id="clickResult"></p>
+    </section>
+
+    <!-- Hover Effect -->
+    <section>
+      <h2>💻 Terminal Scan Zone</h2>
+      <div id="hoverBox">Hover to Activate Scan...</div>
+    </section>
+
+    <!-- Key Detection -->
+    <section>
+      <h2>⌨️ Key Detection Console</h2>
+      <input type="text" id="keyInput" placeholder="Type a command..." />
+      <p id="keyResult"></p>
+    </section>
+
+    <!-- Form Validation -->
+    <section>
+      <h2>📝 Login to Mainframe</h2>
+      <form id="sampleForm">
+        <label for="email">📧 Commander Email:</label><br />
+        <input type="email" id="email" name="email" placeholder="name@spacebase.com" required /><br />
+        
+        <label for="password">🔐 Access Code:</label><br />
+        <input type="password" id="password" name="password" placeholder="Enter code" required /><br />
+        
+        <button type="submit">🚀 Start Mission</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
